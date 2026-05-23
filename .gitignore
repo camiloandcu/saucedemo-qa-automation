@@ -1,0 +1,18 @@
+.gradle
+**/build/
+!**/src/**/build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file 
+!gradle-wrapper.jar
+
+# Avoid ignore Gradle wrapper properties
+!gradle-wrapper.properties
+
+# Cache of project
+.gradletasknamecache
+
+# Ignore Visual Studio Code settings
+.vscode/
