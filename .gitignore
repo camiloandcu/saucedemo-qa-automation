@@ -1,6 +1,8 @@
 .gradle
 **/build/
 !**/src/**/build/
+target/ 
+.serenity/ 
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -13,6 +15,7 @@ gradle-app.setting
 
 # Cache of project
 .gradletasknamecache
+
 
 # Ignore Visual Studio Code settings
 .vscode/
