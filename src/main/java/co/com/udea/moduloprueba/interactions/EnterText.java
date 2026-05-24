@@ -26,6 +26,15 @@ public class EnterText implements Performable {
 
     @Step("{0} escribe '{value}' en {target}")
     public <T extends Actor> void performAs(T actor) {
+        agregarDelayParaSocializacion();
         actor.attemptsTo(Enter.theValue(value).into(target));
+    }
+
+    private void agregarDelayParaSocializacion() {
+        try {
+            Thread.sleep(1500);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
     }
 }

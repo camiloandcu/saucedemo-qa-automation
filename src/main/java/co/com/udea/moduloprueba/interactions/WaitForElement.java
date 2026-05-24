@@ -20,8 +20,17 @@ public class WaitForElement implements Performable {
         return new WaitForElement(target);
     }
 
-    @Step("{0} espera a que {target} sea visible")
+        @Step("{0} espera a que {target} sea visible")
     public <T extends Actor> void performAs(T actor) {
+        agregarDelayParaSocializacion();
         actor.attemptsTo(WaitUntil.the(target, isVisible()));
+    }
+
+    private void agregarDelayParaSocializacion() {
+        try {
+            Thread.sleep(1500);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
     }
 }

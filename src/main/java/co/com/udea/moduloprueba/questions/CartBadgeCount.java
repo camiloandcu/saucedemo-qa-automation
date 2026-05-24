@@ -1,6 +1,5 @@
 package co.com.udea.moduloprueba.questions;
 
-import net.serenitybdd.core.annotations.findby.By;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.questions.Text;
 
