@@ -58,5 +58,10 @@ dependencies {
 tasks.named('test') {
     // System configs
     failOnNoDiscoveredTests = false
+    testClassesDirs = sourceSets.test.output.classesDirs
+    classpath = sourceSets.test.runtimeClasspath
+    minHeapSize = '16m'
+    maxHeapSize = '128m'
+    jvmArgs '-XX:+UseSerialGC', '-XX:MaxMetaspaceSize=64m'
 
 }
