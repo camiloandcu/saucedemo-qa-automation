@@ -57,5 +57,6 @@ dependencies {
 
 tasks.named('test') {
     // System configs
+    failOnNoDiscoveredTests = false
 
 }
