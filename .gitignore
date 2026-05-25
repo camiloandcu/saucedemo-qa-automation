@@ -2,7 +2,8 @@
 **/build/
 !**/src/**/build/
 target/ 
-.serenity/ 
+.serenity/
+bin/ 
 
 # Ignore Gradle GUI config
 gradle-app.setting
