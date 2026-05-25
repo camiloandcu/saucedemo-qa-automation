@@ -9,8 +9,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "co.com.udea.moduloprueba.stepdefinitions",
-        snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@HappyPath or @AlternativePath or @ExceptionalPath"
+        snippets = CucumberOptions.SnippetType.CAMELCASE
 )
 public class Runner {
 }
