@@ -6,6 +6,7 @@ buildscript {
 
 plugins {
 	id 'io.github.jumosqu12.screenplayarchitecture' version '2.0.1'
+	id 'net.serenity-bdd.serenity-gradle-plugin' version '5.3.9'
 	id 'java'
     id 'eclipse'
     id 'idea'
