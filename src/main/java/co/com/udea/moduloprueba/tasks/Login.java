@@ -30,10 +30,10 @@ public class Login implements Performable {
         actor.attemptsTo(
                 WaitForElement.toBeVisible(LoginPage.USERNAME_FIELD),
                 EnterText.of(username).into(LoginPage.USERNAME_FIELD),
-                Pause.ofMillis(500),
+            Pause.ofMillis(Pause.STANDARD_DELAY_MS),
                 WaitForElement.toBeVisible(LoginPage.PASSWORD_FIELD),
                 EnterText.of(password).into(LoginPage.PASSWORD_FIELD),
-                Pause.ofMillis(500),
+            Pause.ofMillis(Pause.STANDARD_DELAY_MS),
                 ClickOn.the(LoginPage.LOGIN_BUTTON));
     }
 }

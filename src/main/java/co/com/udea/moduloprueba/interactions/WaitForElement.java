@@ -28,7 +28,7 @@ public class WaitForElement implements Performable {
 
     private void agregarDelayParaSocializacion() {
         try {
-            Thread.sleep(1500);
+            Thread.sleep(Pause.STANDARD_DELAY_MS);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }

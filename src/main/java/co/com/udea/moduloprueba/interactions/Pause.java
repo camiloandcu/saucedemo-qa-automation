@@ -6,6 +6,8 @@ import net.serenitybdd.screenplay.Performable;
 
 public class Pause implements Performable {
 
+    public static final long STANDARD_DELAY_MS = 1300L;
+
     private final long milliseconds;
 
     private Pause(long milliseconds) {

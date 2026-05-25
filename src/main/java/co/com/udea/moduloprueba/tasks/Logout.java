@@ -23,10 +23,10 @@ public class Logout implements Performable {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 ClickOn.the(NavigationMenu.BURGER_MENU_BUTTON),
-                Pause.ofMillis(500),
+                Pause.ofMillis(Pause.STANDARD_DELAY_MS),
                 WaitForElement.toBeVisible(NavigationMenu.LOGOUT_LINK),
-                Pause.ofMillis(500),
+                Pause.ofMillis(Pause.STANDARD_DELAY_MS),
                 ClickOn.the(NavigationMenu.LOGOUT_LINK),
-                Pause.ofMillis(500));
+                Pause.ofMillis(Pause.STANDARD_DELAY_MS));
     }
 }
