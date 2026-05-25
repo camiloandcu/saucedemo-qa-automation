@@ -1,30 +1,22 @@
 package co.com.udea.moduloprueba.stepdefinitions;
 
 import co.com.udea.moduloprueba.interactions.ClickOn;
-import co.com.udea.moduloprueba.interactions.WaitForElement;
 import co.com.udea.moduloprueba.models.Product;
-import co.com.udea.moduloprueba.models.UserCredentials;
 import co.com.udea.moduloprueba.questions.CatalogProductsQuestion;
 import co.com.udea.moduloprueba.questions.CartProductsQuestion;
 import co.com.udea.moduloprueba.questions.CartBadgeCount;
-import co.com.udea.moduloprueba.questions.ErrorMessageText;
 import co.com.udea.moduloprueba.questions.OrderConfirmationMessage;
 import co.com.udea.moduloprueba.tasks.AddCheapestProductToCartTask;
 import co.com.udea.moduloprueba.tasks.AddRandomProductToCartTask;
 import co.com.udea.moduloprueba.tasks.CompleteOrderTask;
 import co.com.udea.moduloprueba.tasks.FillCheckoutInfoTask;
-import co.com.udea.moduloprueba.tasks.LoginTask;
 import co.com.udea.moduloprueba.tasks.ProceedToCheckoutTask;
 import co.com.udea.moduloprueba.tasks.RemoveAllProductsFromCartTask;
 import co.com.udea.moduloprueba.tasks.RemoveOneProductFromCartTask;
 import co.com.udea.moduloprueba.tasks.SortCatalogByPriceTask;
-import co.com.udea.moduloprueba.userinterfaces.LoginPage;
 import co.com.udea.moduloprueba.userinterfaces.CheckoutStepOnePage;
-import co.com.udea.moduloprueba.userinterfaces.InventoryPage;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import net.serenitybdd.screenplay.actions.Open;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -4,7 +4,6 @@ import co.com.udea.moduloprueba.models.UserCredentials;
 import co.com.udea.moduloprueba.questions.ErrorMessageText;
 import co.com.udea.moduloprueba.questions.ProductsPageTitle;
 import co.com.udea.moduloprueba.tasks.Login;
-import co.com.udea.moduloprueba.tasks.LoginTask;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Entonces;
 
@@ -20,14 +19,14 @@ public class AuthStepDefinition extends StepDefinition {
     @Cuando("el usuario inicia sesion con credenciales validas")
     public void elUsuarioIniciaSesionConCredencialesValidas() {
         Buyer().attemptsTo(
-                LoginTask.withCredentials(UserCredentials.STANDARD_USER, UserCredentials.PASSWORD)
+                Login.withCredentials(UserCredentials.STANDARD_USER, UserCredentials.PASSWORD)
         );
     }
 
     @Cuando("el usuario inicia sesion con credenciales invalidas")
     public void elUsuarioIniciaSesionConCredencialesInvalidas() {
         Buyer().attemptsTo(
-                LoginTask.withCredentials(UserCredentials.STANDARD_USER, "wrong_password")
+                Login.withCredentials(UserCredentials.STANDARD_USER, "wrong_password")
         );
     }
 
