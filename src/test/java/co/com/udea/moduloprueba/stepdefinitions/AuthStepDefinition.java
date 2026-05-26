@@ -2,13 +2,11 @@ package co.com.udea.moduloprueba.stepdefinitions;
 
 import co.com.udea.moduloprueba.models.UserCredentials;
 import co.com.udea.moduloprueba.questions.ErrorMessageText;
-import co.com.udea.moduloprueba.questions.ProductsPageTitle;
 import co.com.udea.moduloprueba.tasks.Login;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Entonces;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
-import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.isEmptyOrNullString;
 import static org.hamcrest.Matchers.is;
